@@ -1,0 +1,343 @@
+* {
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box;
+}
+.div1 {
+    width: 100%;
+}
+.nav {
+    padding: 0px 60px;
+    width: 100%;
+    background-color: #444;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+}
+.nav div {
+    display: flex;
+    align-items: center ;
+    height:100% ;
+}
+.nav a {
+    text-decoration: none ;
+    font-size: 14px;
+    height: 100%;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    color: rgb(253, 253, 253);
+    font-family: "Noto Naskh Arabic", sans-serif ;
+}
+.nav a:hover {
+    background-color: rgb(135, 135, 135);
+}
+.nav a i {
+    font-size: 17px;
+}
+.nav .nav-right img {
+    width: 180px;
+    height: 80%;
+    padding: 5px;
+}
+.nav .nav-right a i {
+    margin: 0px 5px;
+    font-size: 13px;
+}
+.nav .nav-right a .fa-bars {
+    font-size: 20px;
+}
+
+main {
+    min-height: 100vh ;
+    background-image: url('hero.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Naskh Arabic", sans-serif ;
+    text-align: center;
+}
+main h3 {
+    font-size: 35px ;
+}
+main p {
+    font-size: 20px ;
+    margin: 20px 0px;
+}
+main .search {
+    position: relative;
+}
+main input {
+    width: 658px ;
+    height: 65px ;
+    padding: 5px 15px ;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+main button {
+    width: 80px ;
+    height: 80%;
+    border: none;
+    background-color: #52b835;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%) ;
+}
+.section1 {
+    font-size: 35px;
+}
+.section1 {
+    min-height: 100vh;
+    padding: 50px;
+    width: 100%;
+}
+.section1 h3 {
+    text-align: center;
+    font-family: "Noto Naskh Arabic", sans-serif ;
+}
+.section1 .parent {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section1 .parent .service {
+    width: 23% ;
+    height: 200px;
+    background-image: url('1.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+    margin: 20px auto;
+    position: relative;
+}
+.section1 .parent .parent-two{
+    background-image: url('2.jpg');
+}
+.section1 .parent .parent-three{
+    background-image: url('3.jpg');
+}
+.section1 .parent .parent-four{
+    background-image: url('4.jpg');
+}
+.section1 .parent .parent-five{
+    background-image: url('5.jpg');
+}
+.section1 .parent .parent-six{
+    background-image: url('6.jpg');
+}
+.section1 .parent .parent-seven{
+    background-image: url('7.jpg');
+}
+.section1 .parent .parent-eight{
+    background-image: url('8.jpg');
+}
+.section1 .parent .service::after{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .4 ;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.section1 .parent .service p {
+    font-size: 30px;
+    color: white;
+    z-index: 2;
+}
+.section2{
+    width: 100%;
+    padding: 50px 70px 100px ;
+    background-color: #f1f1f1;
+
+}
+.section2 .section2-two {
+    margin: 20px 0px;
+    height: 100%;
+}
+.section2 .section2-two .title{
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+.section2 .section2-two .title a{
+    padding: 5px 18px;
+    font-size: 10px;
+    text-decoration: none;
+    border: 1px solid #52b835;
+    color: #52b835;
+    transition: 1s linear;
+}
+.section2 .section2-two .title a:hover{
+    background-color: #52b835;
+    color: white;
+}
+.section2 .section2-two .title p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.section2 .section2-two .item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2 .section2-two .item .item1 {
+    width: 23%;
+    margin: 20px auto;
+    height: 330px;
+}
+.section2 .section2-two .item .item1 img {
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+}
+.section2 .section2-two .item .item1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 30px;
+    position: relative;
+}
+.section2 .section2-two .item .item1 a:hover{
+    color: #52b835;
+}
+.section2 .section2-two .item .item1 p{
+    font-size: 12px;
+    color: #777;
+
+}
+.section2 .section2-two .item .item1 i{
+    color: #fa9747;
+    font-size: 14px;
+}
+.section2 .section2-two .item .item1 .prise {
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+.section2 .section2-two .item .item1 .prise span {
+    font-size: 18px;
+}
+
+.link {
+    padding: 50px 70px 20px ;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.link .parnt5 {
+    width: 25%;
+}
+.link .parnt5 ul li {
+    list-style-type: none;
+    margin: 10px 0px ;
+    font-size: 16px;
+    font-weight: bolder;
+
+}
+.link .parnt5 ul li i {
+    font-size: 35px;
+    background-color: white;
+    padding: 0;
+    color: gray;
+}
+.link .parnt5 ul li .fa-square-facebook {
+    color: #3b5998;
+}
+.link .parnt5 ul li .fa-twitter {
+    color: #55acee;
+}
+.link .parnt5 ul li .ff {
+    margin: 7px ;
+}
+.link .parnt5 ul li a{
+    text-decoration: none ;
+    font-size: 14px;
+    color: #52b835;
+
+}
+.aaa ul li {
+    margin:0px 0px 8px ;
+}
+.ss {
+    width: 33% !important; 
+}
+.sss{
+    width: 16% !important;
+}
+
+footer{
+    width: 100%;
+}
+footer .top {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 22px 80px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .top span {
+    font-size: 13px;
+}
+footer .top a {
+    text-decoration: none !important;
+    color: #444;
+    font-size: 14px;
+    margin:0px 10px ;
+}
+.qqq-botton {
+    width: 100%;
+    padding: 50px 0px 0px;
+}
+.qqq-botton .logo1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 20px;
+}
+.qqq-botton .logo1 img {
+    height: 36px;
+}
+.qqq-botton .www {
+    padding: 20px 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qqq-botton .www .items8 {
+    padding: 12px 0px;
+     width: 160px; 
+    margin: 10px;
+}
+.qqq-botton .www .items8 h2 {
+    font-size: 13px;
+    line-height: 0;
+}
+.qqq-botton .www .items8 a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 10px;
+    line-height: 0 ;
+}
